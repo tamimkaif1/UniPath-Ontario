@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Style for the logo */
+.logo {
+    width: 150px;    /* Adjust the size according to your needs */
+    height: auto;    /* Ensures the aspect ratio is maintained */
+    display: block;  /* Makes it block-level so it can be centered */
+    margin: 20px auto;  /* Centers the logo and adds some space */
+    border-radius: 8px; /* Slightly rounded corners for a modern feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+.logo:hover {
+    transform: scale(1.1);  /* Adds a hover effect to slightly enlarge the logo */
+    transition: transform 0.3s;
+}
+
+/* Heading style */
+h1 {
+    color: #0cc0df;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adds depth to the heading */
+}
+
+/* Style for the form labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #0cc0df;
+}
+
+/* Style for inputs, selects, and buttons */
+select, input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #0cc0df;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #333;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #00a7c4; /* Focus color to make the form more interactive */
+    box-shadow: 0 0 8px rgba(12, 192, 223, 0.2);
+}
+
+/* Style for buttons */
+button {
+    background-color: #0cc0df;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover and click animations */
+}
+
+button:hover {
+    background-color: #00a7c4;
+    transform: scale(1.05); /* Slight enlargement on hover for interactivity */
+}
+
+button:active {
+    transform: scale(1); /* Reset on button press */
+}
+
+/* Results Section */
+#results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left; /* Align results to the left for better readability */
+}
+
+/* Style for the bullet points in the results */
+#results ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#results li {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Footer styling (if needed for additional elements) */
+footer {
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #0cc0df;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Suggestion Box */
+#suggestions {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    select, input, button {
+        width: 100%; /* Ensure form elements take full width on mobile */
+    }
+
+    .logo {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
